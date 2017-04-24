@@ -1,0 +1,301 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+{% load staticfiles %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>EzLigy | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="{% static 'landing/css/flexslider.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/line-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/elegant-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/lightbox.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/theme-blues.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+        <script src="{% static 'landing/js/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+    </head>
+    <body>
+    	<div class="loader">
+    		<div class="spinner">
+			  <div class="double-bounce1"></div>
+			  <div class="double-bounce2"></div>
+			</div>
+    	</div>
+
+		<div class="nav-container">
+			<nav class="top-bar">
+				<div class="container">
+
+					<!--end of row-->
+
+
+					<div class="row nav-menu">
+						<div class="col-sm-3 col-md-2 columns">
+							<a href="{% url 'index' %}">
+								<img class="logo logo-light" alt="Logo" src="{% static 'landing/img/logo-light.png' %}">
+								<img class="logo logo-dark" alt="Logo" src="{% static 'landing/img/logo-dark.png' %}">
+							</a>
+						</div>
+
+						<div class="col-sm-9 col-md-10 columns">
+							<ul class="menu">
+
+                                <li class=" has-dropdown "><a class="smoothScroll" href="{% url 'index' %}#services">Services</a>
+									<div class="subnav subnav-fullwidth">
+										<div class="col-md-3">
+                                            <ul class="subnav">
+											<li class="alt-font"><a href="{% url 'formation' %}">Formation of a Entity </a></li>
+                                            <h6 class="alt-font">Registration</h6>
+                                            <h6 class="alt-font">Fillings</h6>
+                                            </ul>
+
+
+										</div>
+                                        <div class="col-md-3">
+											<h6 class="alt-font">Certificate</h6>
+                                            <h6 class="alt-font">Miscellaneous Services</h6>
+                                            <h6 class="alt-font">Income Tax</h6>
+
+										</div>
+                                        <div class="col-md-3">
+											<h6 class="alt-font">Audits</h6>
+                                            <h6 class="alt-font">Services Related to Company</h6>
+                                            <h6 class="alt-font">Change Management</h6>
+										</div>
+
+
+										<div class="col-md-3">
+
+											<a class="btn btn-primary btn-filled" href="{% url 'sitemap' %}">All Services</a>
+										</div>
+									</div>
+								</li>
+                                <li class="has-dropdown"><a href="{% url 'paralegal' %}">Paralegal Services</a>
+									<ul class="subnav">
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#filling">Filling</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#drafting">Drafting</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#obtaining">Obtaining Certified Copies</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#rti">RTI Filling</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#process">process services</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#office">Office Management services</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#translation">Translation services</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#steno">Steno services</a></li>
+									</ul>
+								</li>
+                                <li> <a  href="{% url 'contact' %}"> <i class="icon icon_mobile"></i>Contact Us</a></li>
+
+
+
+
+
+							</ul>
+
+							<ul class="social-icons text-right">
+								<li>
+									<a href="#">
+										<i class="icon social_twitter"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.facebook.com/Legalplatformezligy">
+										<i class="icon social_facebook"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon social_instagram"></i>
+									</a>
+								</li>
+							</ul>
+
+
+
+						</div>
+
+					</div><!--end of row-->
+
+					<div class="mobile-toggle">
+						<i class="icon icon_menu"></i>
+					</div>
+
+				</div><!--end of container-->
+			</nav>
+		</div>
+		<div class="main-container">
+			<header class="page-header">
+				<div class="background-image-holder parallax-background">
+					<img class="background-image" alt="Background Image" src="{% static 'landing/img/law_main.jpg' %}">
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+{#							<span class="text-white alt-font">get in touch</span>#}
+							<h1 class="text-white">Work With Us</h1>
+
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</header>
+
+			<section class="contact-center">
+				<div class="container">
+{#					<div class="row">#}
+{#						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">#}
+{#							<h1>Drop us a line<br />to talk about your project</h1>#}
+{#							<p class="lead">#}
+{#								Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.#}
+{#							</p>#}
+{#						</div>#}
+{#					</div><!--end of row-->#}
+
+					<div class="row">
+
+							<div class="form-wrapper clearfix">
+								<form class="form-contact " method="POST" >{% csrf_token %}
+                                    <div class="col-md-4  col-sm-6 ">
+									<div class="inputs-wrapper">
+                                        {{ form.first_name |attr:"class:form-name validate-required"|attr:"placeholder:First Name"}}{{ form.first_name.error }}
+                                        {{ form.last_name |attr:"class:form-name validate-required"|attr:"placeholder:Last Name"}}{{ form.last_name.error }}
+                                        {{ form.father_name |attr:"class:form-name validate-required"|attr:"placeholder:Father's Name"}}{{ form.father_name.error }}
+
+                                        {{ form.date_of_birth |attr:"type:date" |attr:"class:form-control "   }}{{ form.date_of_birth.error }}
+                                        {{ form.gender | attr:"class: btn btn-secondary  dropdown-toggle"|attr:"placeholder:Gender"  }}{{ form.first_name.error }}
+
+
+
+
+									</div>
+
+
+
+									<div class="form-success">
+										<span class="text-white">Message sent - Thanks for your enquiry</span>
+									</div>
+									<div class="form-error">
+										<span class="text-white">Please complete all fields correctly</span>
+									</div>
+                                        </div>
+                                    <div class="col-md-4  col-sm-6 ">
+									<div class="inputs-wrapper">
+
+                                        {{ form.email |attr:"class:form-email validate-required"|attr:"placeholder:email" | attr:"type:email"}}{{ form.email.error }}
+                                        {{ form.mobile_number |attr:"class:form-number validate-required"|attr:"placeholder:Mobile number" |attr:"type:tel"}}
+                                        {{ form.office_landline |attr:"class:form-number validate-required"|attr:"placeholder:Office Landline" |attr:"type:tel"}}
+                                        {{ form.office_address |attr:"class:form-message validate-required"|attr:"placeholder:Office Address"}}
+
+
+
+									</div>
+                                        <input type="submit" class="send-form" value="Send Form">
+
+									<div class="form-success">
+										<span class="text-white">Message sent - Thanks for your enquiry</span>
+									</div>
+									<div class="form-error">
+										<span class="text-white">Please complete all fields correctly</span>
+									</div>
+
+                                        </div>
+                                    <div class="col-md-4  col-sm-6 ">
+									<div class="inputs-wrapper">
+                                        {{ form.State_BAR_Registration |attr:"class:form-name validate-required"|attr:"placeholder:State_BAR_Registration "}}
+                                        {{ form.local_BAR |attr:"class:form-name validate-required"|attr:"placeholder:local_BAR"}}
+                                        {{ form.Place_Of_Practice |attr:"class:form-name validate-required"|attr:"placeholder:Place_Of_Practice"}}
+                                        {{ form.other_area | attr:"placeholder:Area"| attr:"class:form-name validate-required" |attr:"data-toggle:collapse" |attr:"href:#collapseExample" |attr:"aria-expanded:" }}
+
+
+                                        <div class="collapse" id="collapseExample">
+  <div class="card card-block">
+    {{ form.area }}
+      <br>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+									</div>
+
+
+									<div class="form-success">
+										<span class="text-white">Message sent - Thanks for your enquiry</span>
+									</div>
+									<div class="form-error">
+										<span class="text-white">Please complete all fields correctly</span>
+									</div>
+                                        </div>
+
+
+								</form>
+							</div>
+
+
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</section>
+		</div>
+		<div class="footer-container">
+			<footer class="bg-primary short-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="text-white"><h5 style="color: #FFFFFF">Ezligy Consultants LLP</h5><br><span class="text-white">Opp. Hotel Habitate Inn <br> Shinde Ki Chhawani <br> MLB Road Lashkar <br> Gwalior M.P. (474009)</span></span>
+                            <span class="text-white"><i class="icon_phone"></i>&nbsp;&nbsp;95845 45000<br><i class="icon_building_alt"></i>&nbsp;&nbsp;0751-4051000</span>
+							<span class="text-white"><i class="icon_mail">&nbsp;&nbsp;</i><a href="mailto:contact@ezligy.in?Subject=Hello%20again" target="_top">contact@ezligy.in</a></span>
+
+
+						</div>
+					</div><!--end for row-->
+				</div><!--end of container-->
+
+				<div class="contact-action">
+					<div class="align-vertical">
+						<i class="icon text-white icon_mail"></i>
+						<a href="{% url 'feedback' %}" class="text-white"><span class="text-white">Please give your valuable feedbacks <i class="icon arrow_right"></i></span></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+		<script src="{% static 'landing/js/jquery.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.plugin.min.js' %}"></script>
+        <script src="{% static 'landing/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.flexslider-min.js' %}"></script>
+        <script src="{% static 'landing/js/smooth-scroll.min.js' %}"></script>
+        <script src="{% static 'landing/js/skrollr.min.js' %}"></script>
+        <script src="{% static 'landing/js/spectragram.min.js' %}"></script>
+        <script src="{% static 'landing/js/scrollReveal.min.js' %}"></script>
+        <script src="{% static 'landing/js/isotope.min.js' %}"></script>
+        <script src="{% static 'landing/js/twitterFetcher_v10_min.js' %}"></script>
+        <script src="{% static 'landing/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.countdown.min.js' %}"></script>
+        <script src="{% static 'landing/js/scripts.js' %}"></script>
+    <script>
+
+</script>
+    </body>
+</html>

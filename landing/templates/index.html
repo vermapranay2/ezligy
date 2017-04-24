@@ -1,0 +1,519 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>EzLigy | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link href="{% static 'landing/css/flexslider.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+
+        <link href="{% static 'landing/css/line-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/elegant-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/lightbox.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/theme-blues.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+        <script src="{% static 'landing/js/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+    </head>
+    <body>
+    	<div class="loader">
+    		<div class="spinner">
+			  <div class="double-bounce1"></div>
+			  <div class="double-bounce2"></div>
+			</div>
+    	</div>
+
+		<div class="nav-container">
+			<nav class="top-bar">
+				<div class="container">
+
+					<!--end of row-->
+
+
+					<div class="row nav-menu">
+						<div class="col-sm-3 col-md-2 columns">
+							<a href="{% url 'index' %}">
+								<img class="logo logo-light" alt="Logo" src="{% static 'landing/img/logo-light.png' %}">
+								<img class="logo logo-dark" alt="Logo" src="{% static 'landing/img/logo-dark.png' %}">
+							</a>
+						</div>
+
+						<div class="col-sm-9 col-md-10 columns">
+							<ul class="menu">
+								<li ><a class="smoothScroll" href="#about">About</a></li>
+                                <li ><a class="smoothScroll" href="#why">Why Join Us?</a></li>
+                                <li ><a class="smoothScroll" href="{% url 'paralegal' %}#who">Who Can Join?</a></li>
+                                <li class=" has-dropdown "><a class="smoothScroll" href="{% url 'index' %}#services">Services</a>
+									<div class="subnav subnav-fullwidth">
+										<div class="col-md-3">
+                                            <ul class="subnav">
+											<li class="alt-font"><a href="{% url 'formation' %}">Formation of a Entity </a></li>
+                                            <h6 class="alt-font">Registration</h6>
+                                            <h6 class="alt-font">Fillings</h6>
+                                            </ul>
+
+
+										</div>
+                                        <div class="col-md-3">
+											<h6 class="alt-font">Certificate</h6>
+                                            <h6 class="alt-font">Miscellaneous Services</h6>
+                                            <h6 class="alt-font">Income Tax</h6>
+
+										</div>
+                                        <div class="col-md-3">
+											<h6 class="alt-font">Audits</h6>
+                                            <h6 class="alt-font">Services Related to Company</h6>
+                                            <h6 class="alt-font">Change Management</h6>
+										</div>
+
+
+										<div class="col-md-3">
+
+											<a class="btn btn-primary btn-filled" href="{% url 'sitemap' %}">All Services</a>
+										</div>
+									</div>
+								</li>
+                                <li class="has-dropdown"><a href="{% url 'paralegal' %}">Paralegal Services</a>
+									<ul class="subnav">
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#filling">Filling</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#drafting">Drafting</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#obtaining">Obtaining Certified Copies</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#rti">RTI Filling</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#process">process services</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#office">Office Management services</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#translation">Translation services</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#steno">Steno services</a></li>
+									</ul>
+								</li>
+
+                                <li> <a  href="{% url 'contact' %}"> <i class="icon icon_mobile"></i>Contact Us</a></li>
+
+
+
+
+
+
+
+							</ul>
+
+							<ul class="social-icons text-right">
+
+								<li>
+									<a href="#">
+										<i class="icon social_twitter"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.facebook.com/Legalplatformezligy">
+										<i class="icon social_facebook"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon social_instagram"></i>
+									</a>
+								</li>
+							</ul>
+
+
+
+						</div>
+
+					</div><!--end of row-->
+
+					<div class="mobile-toggle">
+						<i class="icon icon_menu"></i>
+					</div>
+
+				</div><!--end of container-->
+			</nav>
+		</div>
+
+		<div class="main-container">
+			<header class="page-header">
+				<div class="background-image-holder parallax-background">
+					<img class="background-image" alt="Background Image" src="{% static 'landing/img/law_main.jpg' %}">
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<img alt="logo" class="logo" src="{% static 'landing/img/logo_final_white.png' %}">
+
+							<h1 class="text-white space-bottom-medium">Expanding your horizon.</h1>
+
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</header>
+
+
+			<section class="strip bg-secondary-1">
+				<div class="container">
+					<div class="row clearfix">
+						<div class="col-sm-6 col-xs-12 pull-left">
+							<h3 class="text-white"><strong>Join us. It will only take a minute. </strong></h3>
+						</div>
+
+						<div class="col-sm-4 col-xs-12 pull-right text-right">
+							<a href="{% url 'register' %}" class="btn btn-primary btn-white">Join Today</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about"  class="pure-text-centered" style="background-color: #FAFAFA" >
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+
+							<h1><strong>Who are we and what do we do?</strong></h1>
+							<p class="lead" style="text-align: left">
+								Ezligy is a LLP having an in-house highly qualified team of Advocates, Charted Accountants, Legal
+
+advisors and Para Legal manpower including Clerks,. Our team is committed for handling of all legal services
+
+and compliances in most efficient manner. We have a dedicated desk for advice, assistance and providing a
+
+right person to do the services which one can opt for through the forum to provide quick, easy and effective
+
+assistance in the most efficient manner with a time and money saving manner.</p>
+
+								<p class="lead" style="text-align: left">
+								Any legal task is scrutinised at the back office at first by the team of our experts and practicing lawyers, it is
+
+then forwarded to the concerned para-legal expert of the field related to the task who gives a preliminary
+
+assessment over the procedure compliances as per applicable laws along with the professional time required
+
+and the estimate of the professional charges for the same.</p>
+
+
+
+
+
+
+						</div>
+					</div><!--end of row-->
+
+				</div><!--end of container-->
+			</section>
+            <section class="duplicatable-content milestones ">
+
+
+				<div class="container text-center" id="services">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+							<h1>Services</h1>
+
+						</div>
+					</div><!--end of row-->
+
+					<div class="row">
+                        <a href="{% url 'formation' %}">
+						<div  class="col-md-2 col-sm-6  text-center">
+							<div class="feature feature-icon-large">
+								<i class="icon icon_briefcase"></i>
+								<div class="pin-body"></div>
+								<div class="pin-head"></div>
+								<h5>Formation of a Entity</h5>
+								<span></span>
+{#								<span class="sub">RMIT University Melbourne</span>#}
+							</div>
+						</div></a><!--end 3 col-->
+
+						<div class="col-md-2 col-sm-6 text-center">
+							<div class="feature feature-icon-large">
+								<i class="icon icon_box-checked"></i>
+								<div class="pin-body"></div>
+								<div class="pin-head"></div>
+								<h5>Registration</h5>
+                                <span></span>
+{#								<span class="sub">RMIT University Melbourne</span>#}
+
+							</div>
+						</div><!--end 3 col-->
+
+						<div class="col-md-2 col-sm-6 text-center">
+							<div class="feature feature-icon-large">
+								<i class="icon icon_pencil-edit "></i>
+
+								<div class="pin-body"></div>
+								<div class="pin-head"></div>
+								<h5>Fillings</h5>
+                                <span></span>
+{#								<span class="sub">RMIT University Melbourne</span>#}
+
+							</div>
+						</div><!--end 3 col-->
+
+						<div class="col-md-2 col-sm-6 text-center">
+							<div class="feature feature-icon-large">
+								<i class="icon icon_document_alt"></i>
+								<div class="pin-body"></div>
+								<div class="pin-head"></div>
+								<h5>Certificate</h5>
+                                <span></span>
+{#								<span class="sub">RMIT University Melbourne</span>#}
+
+							</div>
+						</div><!--end 3 col-->
+                        <div class="col-md-2 col-sm-6 text-center">
+							<div class="feature feature-icon-large">
+								<i class="icon icon_building"></i>
+								<div class="pin-body"></div>
+								<div class="pin-head"></div>
+								<h5>Services Related to Company</h5>
+                                <span></span>
+{#								<span class="sub">RMIT University Melbourne</span>#}
+
+							</div>
+						</div><!--end 3 col-->
+                        <a href="{% url 'paralegal' %}">
+                        <div class="col-md-2 col-sm-6 text-center">
+							<div class="feature feature-icon-large">
+								<i class="icon icon_balance"></i>
+								<div class="pin-body"></div>
+								<div class="pin-head"></div>
+								<h5>paralegal</h5>
+                                <span></span>
+{#								<span class="sub">RMIT University Melbourne</span>#}
+
+							</div>
+						</div></a><!--end 3 col-->
+
+
+
+					</div><!--end of row-->
+                    <a class="btn btn-primary btn-filled" href="{% url 'sitemap' %}">All Services</a>
+
+				</div>
+
+			</section>
+			<section id="why" class="side-image clearfix" >
+				<div class="image-container col-md-5 col-sm-4 pull-left">
+					<div class="background-image-holder">
+						<img class="background-image" alt="Background Image" src="{% static 'landing/img/O6POE40-min.jpg' %}">
+					</div>
+				</div>
+
+
+
+
+
+                <div class="container" >
+					<div class="row">
+						<div class="col-md-6 col-md-offset-6 col-sm-7 col-sm-offset-5 content clearfix">
+							<h1>Why Join  Us?</h1>
+
+
+							<div class="row" >
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon_pencil"></i>
+										</div>
+										<div class="feature-text">
+											<p>Free Registration</p>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon_profile"></i>
+										</div>
+										<div class="feature-text">
+											<p>Free Profile with the ability to share or unique Link</p>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon_group"></i>
+										</div>
+										<div class="feature-text">
+											<p>Easily engage or hire junior lawyers for any type of assistance with money back guarantee</p>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon_briefcase_alt"></i>
+										</div>
+										<div class="feature-text">
+											<p>Easily engage or hire freelancers related to legal field with money back guarantee</p>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+
+
+
+
+
+
+							</div><!--end of row-->
+							<div class="row" >
+
+							<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon_balance"></i>
+										</div>
+										<div class="feature-text">
+											<p>Easily get your paralegal work done in your budget</p>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon_flowchart_alt"></i>
+										</div>
+										<div class="feature-text">
+											<p>One stop solution for all paralegal requirements</p>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon_currency_alt"></i>
+										</div>
+										<div class="feature-text">
+											<p>Easy purchase of Bar Tickets, Court Fees Tickets - Home Delivery</p>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon_clock"></i>
+										</div>
+										<div class="feature-text">
+											<p>24 hour Steno service available</p>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+								</div>
+								<div class="row">
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon_documents"></i>
+										</div>
+										<div class="feature-text">
+											<p>Get typed copy or print outs at office or court with other court filing requirements</p>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+								<div class="col-md-6 no-pad-left">
+									<div class="feature feature-icon-left">
+										<div class="icon-holder">
+											<i class="icon icon_search_alt"></i>
+										</div>
+										<div class="feature-text">
+											<p>Get translation of the legal documents with ease and at the comfort of their home</p>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+								</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+
+
+
+
+
+
+							<h1>
+								<strong class="text-grey">We are hiring</strong>
+							</h1>
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</section>
+			<div class="footer-container">
+
+			<div class="footer-container">
+			<footer class="bg-primary short-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="text-white"><h5 style="color: #FFFFFF">Ezligy Consultants LLP</h5><br><span class="text-white">Opp. Hotel Habitate Inn <br> Shinde Ki Chhawani <br> MLB Road Lashkar <br> Gwalior M.P. (474009)</span></span>
+                            <span class="text-white"><i class="icon_phone"></i>&nbsp;&nbsp;95845 45000<br><i class="icon_building_alt"></i>&nbsp;&nbsp;0751-4051000</span>
+							<span class="text-white"><i class="icon_mail">&nbsp;&nbsp;</i><a href="mailto:contact@ezligy.in?Subject=Hello%20again" target="_top">contact@ezligy.in</a></span>
+
+
+						</div>
+					</div><!--end for row-->
+				</div><!--end of container-->
+
+				<div class="contact-action">
+					<div class="align-vertical">
+						<i class="icon text-white icon_mail"></i>
+						<a href="{% url 'feedback' %}" class="text-white"><span class="text-white">Please give your valuable feedbacks <i class="icon arrow_right"></i></span></a>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+
+
+
+
+
+
+
+		<script src="{% static 'landing/js/jquery.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.plugin.min.js' %}"></script>
+        <script src="{% static 'landing/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.flexslider-min.js' %}"></script>
+        <script src="{% static 'landing/js/smooth-scroll.min.js' %}"></script>
+        <script src="{% static 'landing/js/skrollr.min.js' %}"></script>
+        <script src="{% static 'landing/js/spectragram.min.js' %}"></script>
+        <script src="{% static 'landing/js/scrollReveal.min.js' %}"></script>
+        <script src="{% static 'landing/js/isotope.min.js' %}"></script>
+        <script src="{% static 'landing/js/twitterFetcher_v10_min.js' %}"></script>
+        <script src="{% static 'landing/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.countdown.min.js' %}"></script>
+        <script src="{% static 'landing/js/scripts.js' %}"></script>
+
+        <script src="{% static 'landing/js/smoothscroll.js' %}"></script>
+    </body>
+</html>

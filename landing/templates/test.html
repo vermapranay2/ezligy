@@ -1,0 +1,654 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+{% load staticfiles %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>EzLigy | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="{% static 'landing/css/flexslider.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/line-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/elegant-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/lightbox.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/theme-blues.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+        <script src="{% static 'landing/js/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+    </head>
+    <body>
+{#    	<div class="loader">#}
+{#    		<div class="spinner">#}
+{#			  <div class="double-bounce1"></div>#}
+{#			  <div class="double-bounce2"></div>#}
+{#			</div>#}
+{#    	</div>#}
+
+		<div class="nav-container">
+			<nav class="top-bar">
+				<div class="container">
+
+					<!--end of row-->
+
+
+					<div class="row nav-menu">
+						<div class="col-sm-3 col-md-2 columns">
+							<a href="{% url 'index' %}">
+								<img class="logo logo-light" alt="Logo" src="{% static 'landing/img/logo-light.png' %}">
+								<img class="logo logo-dark" alt="Logo" src="{% static 'landing/img/logo-dark.png' %}">
+							</a>
+						</div>
+
+						<div class="col-sm-9 col-md-10 columns">
+							<ul class="menu">
+
+                                <li class="has-dropdown "><a class="smoothScroll" href="{% url 'index' %}#services">Services</a>
+									<div class="subnav subnav-fullwidth">
+										<div class="col-md-3">
+                                            <ul class="subnav">
+											<li class="alt-font"><a href="{% url 'formation' %}">Formation of a Entity </a></li>
+                                            <h6 class="alt-font">Registration</h6>
+                                            <h6 class="alt-font">Fillings</h6>
+                                                </ul>
+
+
+										</div>
+                                        <div class="col-md-3">
+											<h6 class="alt-font">Certificate</h6>
+                                            <h6 class="alt-font">Miscellaneous Services</h6>
+                                            <h6 class="alt-font">Income Tax</h6>
+
+										</div>
+                                        <div class="col-md-3">
+											<h6 class="alt-font">Audits</h6>
+                                            <h6 class="alt-font">Services Related to Company</h6>
+                                            <h6 class="alt-font">Change Management</h6>
+										</div>
+
+
+										<div class="col-md-3">
+
+											<a class="btn btn-primary btn-filled" href="{% url 'sitemap' %}">All Services</a>
+										</div>
+									</div>
+								</li>
+                                <li class="has-dropdown"><a href="#">Paralegal Services</a>
+									<li ><a class="smoothScroll" href="{% url 'paralegal' %}#filling">Filling</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#drafting">Drafting</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#obtaining">Obtaining Certified Copies</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#rti">RTI Filling</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#office">Office Management services</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#translation">Translation services</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#steno">Steno services</a></li>
+
+                                </li>
+
+
+
+
+							</ul>
+
+							<ul class="social-icons text-right">
+								<li>
+									<a href="#">
+										<i class="icon social_twitter"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon social_facebook"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon social_instagram"></i>
+									</a>
+								</li>
+							</ul>
+
+
+
+						</div>
+
+					</div><!--end of row-->
+
+					<div class="mobile-toggle">
+						<i class="icon icon_menu"></i>
+					</div>
+
+				</div><!--end of container-->
+			</nav>
+		</div>
+        <div class="main-container">
+			<section class="hero-slider">
+				<ul class="slides">
+					<li class="overlay">
+						<div class="background-image-holder parallax-background">
+							<img class="background-image" alt="Background Image" src="{{ obj.image.url }}">
+						</div>
+
+						<div class="container align-vertical">
+							<div class="row">
+								<div class="col-md-6 col-sm-9">
+									<h1 class="text-white">{{ obj.name }}</h1>
+									<a target="_blank" href="http://www.mediumra.re/pivot/variant/builder.html" class="btn btn-primary btn-white">Rs. {{ obj.cost }} </a>
+									<a href="#" class="btn btn-primary btn-filled">Join Us</a>
+								</div>
+							</div>
+						</div><!--end of container-->
+					</li><!--end of individual slide-->
+
+					<!--end of individual slide-->
+
+
+				</ul>
+			</section>
+        <div class="main-container">
+
+          <section class="video-inline">
+				<div class="container">
+					<div class="row">
+                        <div class="col-md-6 col-sm-12">
+							<h2 class="space-bottom-medium">For becoming a Non-Profit Organization(NPO), the license shall be obtained from Central Government and other conditions for obtaining license are as follows:</h2>
+                            <p class="lead space-bottom-medium">
+                                <ol type="a">
+                            <li>The main objective is to promote arts, commerce, science, research, charity, social welfare, protection of environment, religion, education</li>
+                            <li>The income of NPO shall be utilized in promotion of its object and payment of dividend to its member is totally prohibited.</li>
+                        </ol>
+                            <h2>If Central Government is satisfied with the above mentioned conditions, then it shall grant the license. The word Ltd. or Pvt. Ltd. shall not be a part of its name.</h2>
+                            </p>
+
+
+
+							<a href="#" class="btn btn-primary">See Features</a>
+							<a href="#" class="btn btn-primary btn-text-only">Learn More</a>
+						</div>
+
+
+						<div class="col-md-6 col-sm-12">
+							<div class="inline-video-wrapper">
+								<video controls="">
+									<source src="https://youtu.be/NSIg1XT-KM0" type="video/webm">
+									<source src="video/video.mp4" type="video/mp4">
+									<source src="video/video.ogv" type="video/ogg">
+								</video>
+							</div>
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</section>
+
+
+            <section class="feature-selector text-left">
+				<div class="container">
+					<div class="row">
+						<ul class="selector-tabs clearfix">
+							<li class="clearfix text-primary col-md-2 col-sm-5 active">
+									<i class="icon icon_star"></i>
+									<span>Features</span>
+							</li><!--end of tab-->
+
+							<li class="clearfix text-primary col-md-2 col-sm-5">
+									<i class="icon icon_like"></i>
+									<span>Benefits</span>
+							</li><!--end of tab-->
+
+							<li class="clearfix text-primary col-md-2 col-sm-4">
+									<i class="icon icon_dislike"></i>
+									<span>Limitations</span>
+							</li><!--end of tab-->
+
+							<li class="clearfix text-primary col-md-2 col-sm-5">
+									<i class="icon icon_documents_alt"></i>
+									<span>Documents required</span>
+							</li><!--end of tab-->
+                            <li class="clearfix text-primary col-md-2 col-sm-5">
+									<i class="icon icon_documents_alt"></i>
+									<span>Procedure</span>
+							</li><!--end of tab-->
+                            <li class="clearfix text-primary col-md-2 col-sm-5">
+									<i class="icon icon_question"></i>
+									<span>FAQS</span>
+							</li><!--end of tab-->
+						</ul>
+					</div>
+				</div>
+
+				<div class="container ">
+					<ul class="selector-content">
+						<li class="clearfix active">
+                            <div class="row">
+						<div class="col-md-12 text-center">
+							<h1>Features Includes</h1>
+						</div>
+					</div><!--end of row-->
+							<div class="row">
+								<div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_check"></i>It is incorporated only for promotion of commerce,arts, science, sports, education, research, social welfare, religion, charity, protection of environment or any other such object and the profit or income shall be applied for the main object.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_check"></i>It shall enjoy all the privileges, subject to all the obligations of Limited Company.
+NPO shall not be treated as Small Company.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_check"></i>The application for registering the NPO shall be made to ROC under whose jurisdiction the registered office of the company is to be situated.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                </div>
+                            <div class="row">
+                                 <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_check"></i>Its income is taxable according to the rates applicable to the other companies.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                 <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_check"></i>It shall not alter the provisions of its memorandum or articles except with the prior approval of Central Government.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+
+
+
+                            </div>
+
+						</li><!--end of individual feature content-->
+
+						<li class="clearfix">
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<h1>Benefits</h1>
+								</div>
+							</div><!--end of row-->
+
+							<div class="row">
+								<div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_like"></i>&nbsp; Tax deductions to the donors of the company u/s 80 G of the Income Tax Act.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_like"></i>&nbsp; Exemption of Stamp Duty for registration.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_like"></i>&nbsp; Many privileges and exemptions are provided under Company Law.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                </div>
+                            <div class="row">
+                                <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_like"></i>&nbsp; It can be formed with or without share capital, in case they are formed without capital,then necessary funds for carrying the business are brought in form of donations, subscriptions from members and general public.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+
+
+                                <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_like"></i>&nbsp; A partnership firm may become a member of NPO and membership shall cease upon dissolution of the firm. However, partners of the dissolved firm may continue to be the members of such company in their individual capacity.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_like"></i>&nbsp; Easy transferability of ownership.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+
+
+                            </div><!--end of row-->
+
+
+						</li><!--end of individual feature content-->
+
+						<li class="clearfix">
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<h1>Limitations</h1>
+								</div>
+							</div><!--end of row-->
+
+							<div class="row">
+								 <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_dislike"></i>&nbsp; Profit of the company shall be applied for the promotion of the main object and no member shall be appointed as a remunerated officer.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                 <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_dislike"></i>&nbsp; Declaration of dividend or distribution of profit to the promotes or members is not allowed.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                 <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_dislike"></i>&nbsp; If conditions are not satisfied then license may be revoked but opportunity of being heard shall be given, if license is revoked then the word Ltd. or Pvt. Ltd.shall be a part of its name and all the exemptions shall be withdrawn.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+
+
+
+
+
+							</div><!--end of row-->
+						</li><!--end of individual feature content-->
+
+						<li class="clearfix">
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<h1>Documents Required</h1>
+								</div>
+							</div><!--end of row-->
+
+							<div class="row">
+								<div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_check"></i>PAN Card, Address Proof (electricity bill/ water bill/ phone bill/ bank statement) ID Proof(Voter ID/ Aadhar Card/ Driving License/ Passport) is required of all directors and shareholders</h6>
+
+										</div>
+									</div>
+                                </div>
+                                <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_check"></i>Registered office address proof (if rented, than rent agreement and NOC from the owner of premises) shall be obtained.</h6>
+
+										</div>
+									</div>
+                                </div>
+                                <div class="col-md-4 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_check"></i>Passport size photographs of all directors and shareholders.</h6>
+
+										</div>
+									</div>
+                                </div>
+
+
+
+
+
+
+
+
+							</div><!--end of row-->
+						</li><!--end of individual feature content-->
+                        <li class="clearfix ">
+                            <div class="row">
+						<div class="col-md-12 text-center">
+							<h1>Registration Procedure</h1>
+						</div>
+					</div><!--end of row-->
+							<div class="container">
+                                <div class=" no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><span class="badge">1</span>&nbsp;Minimum 2 shareholders and 2 directors shall be required to form Section 8 Company. The directors and shareholders can be same person.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+								<div class=" no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><span class="badge">2</span>&nbsp;Director Identification Number (DIN) and Digital Signature Certificate (DSC) for all the directors shall be obtained from the Certifying Authority.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                               <div class=" no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><span class="badge">3</span> &nbsp;Obtain Name Approval Letter from the ROC after making an application in prescribed form. Six names in preferential order may be proposed in single application.s</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+
+
+
+                              <div class=" no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><span class="badge">4</span>&nbsp;Draft MOA and AOA of the proposed company according to the format given in Schedule 1 of the Companies Act, 2013.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                <div class=" no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><span class="badge">5</span>&nbsp; The MOA and AOA have to be signed by each of the subscribers indicating the no. of shares subscribed by each of them in MOA. The MOA should be in form INC 13. The AOA also mentions the names of the First Directors of the Company.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                <div class=" no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><span class="badge">6</span>&nbsp;An application for License under Section 8 of new companies with a charitable objective shall be filed in form INC 12 along with MOA and AOA and prescribed fee.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                <div class=" no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><span class="badge">7</span>&nbsp;Declaration in form INC 14 by an Advocate/ CA/ CS/ Cost Accountant in practice, that the MOA & AOA, rules and all requirements have been drawn up in conformity with Section 8</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                                <div class=" no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><span class="badge">8</span>&nbsp; After filing the requisite forms i.e, INC 7, INC 22 and DIR 12 for the incorporation with the ROC along with the prescribed fees, and ROC gets satisfied, then it shall issue Certificate of Incorporation in the prescribed form.</h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+
+
+
+
+
+
+
+                                </div>
+
+						</li>
+                        <li class="clearfix" >
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<h1>Frequenty Asked Questions</h1>
+								</div>
+							</div><!--end of row-->
+                            <div class="col-md-12 no-pad-left" >
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h5><i class="icon icon_question_alt2"></i>&nbsp;What is the minimum capital requirement for incorporation of Section 8 Company?<br><i class="icon arrow_triangle-right"></i><small>There is no requirement of minimum capital.</small></h5>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                            <div class="col-md-12 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_question_alt2"></i>&nbsp;Whether the provisions of CSR  are applicable to Section 8 companies?<br><i class="icon arrow_triangle-right"></i><small>Since, Section 8 apply their profits in promotion of its objects, therefore, it is not required to follow CSR provisions.</small></h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                            <div class="col-md-12 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_question_alt2"></i>&nbsp; Under which conditions license of Section 8 company may be revoked?<br><i class="icon arrow_triangle-right"></i><small>If conditions and objects of obtaining the license are not satisfied then license shall be revoked but opportunity of being heard shall be given. If license is revoked then the word ltd. or pvt. Ltd. shall be the part of its name and all the exemptions shall be withdrawn.</small></h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                            <div class="col-md-12 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_question_alt2"></i>&nbsp; Is Stamp duty required on registration of Section 8 company?<br><i class="icon arrow_triangle-right"></i><small>Company (NPO) is registered without paying any Stamp duty on its MOA & AOA.</small></h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+                            <div class="col-md-12 no-pad-left">
+									<div class="feature ">
+
+										<div class="feature-text">
+											<h6><i class="icon icon_question_alt2"></i>&nbsp; Who can become a member in Section 8 Company?<br><i class="icon arrow_triangle-right"></i><small>Any individual / organization shall become a member including foreigners / NRI (details shall be obtained). </small></h6>
+
+										</div>
+									</div>
+								</div><!--end of feature-->
+
+
+
+
+
+
+						</li><!--end of individual feature content-->
+
+
+					</ul>
+				</div>
+
+			</section>
+		<div class="footer-container">
+			<footer class="bg-primary short-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="text-white">Ezligy</span>
+							<span class="text-white"><a href="#">vermapranay2@gmail.com</a></span>
+							<span class="text-white">8305185569</span>
+							<span class="text-white">address</span>
+						</div>
+					</div><!--end for row-->
+				</div><!--end of container-->
+
+				<div class="contact-action">
+					<div class="align-vertical">
+						<i class="icon text-white icon_mail"></i>
+						<a href="contact.html" class="text-white"><span class="text-white">Get in touch with us <i class="icon arrow_right"></i></span></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+		<script src="{% static 'landing/js/jquery.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.plugin.min.js' %}"></script>
+        <script src="{% static 'landing/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.flexslider-min.js' %}"></script>
+        <script src="{% static 'landing/js/smooth-scroll.min.js' %}"></script>
+        <script src="{% static 'landing/js/skrollr.min.js' %}"></script>
+        <script src="{% static 'landing/js/spectragram.min.js' %}"></script>
+        <script src="{% static 'landing/js/scrollReveal.min.js' %}"></script>
+        <script src="{% static 'landing/js/isotope.min.js' %}"></script>
+        <script src="{% static 'landing/js/twitterFetcher_v10_min.js' %}"></script>
+        <script src="{% static 'landing/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.countdown.min.js' %}"></script>
+        <script src="{% static 'landing/js/scripts.js' %}"></script>
+    <script>
+
+</script>
+    </body>
+</html>

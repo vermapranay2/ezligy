@@ -1,0 +1,812 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+{% load staticfiles %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>EzLigy | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="{% static 'landing/css/flexslider.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/line-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/elegant-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/lightbox.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/theme-blues.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+        <script src="{% static 'landing/js/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+    </head>
+    <body>
+
+
+		<div class="nav-container">
+			<nav class="top-bar">
+				<div class="container">
+
+					<!--end of row-->
+
+
+					<div class="row nav-menu">
+						<div class="col-sm-3 col-md-2 columns">
+							<a href="{% url 'index' %}">
+								<img class="logo logo-light" alt="Logo" src="{% static 'landing/img/logo-light.png' %}">
+								<img class="logo logo-dark" alt="Logo" src="{% static 'landing/img/logo-dark.png' %}">
+							</a>
+						</div>
+
+						<div class="col-sm-9 col-md-10 columns">
+							<ul class="menu">
+
+                                <li ><a class="smoothScroll" href="{% url 'paralegal' %}#who">Who Can Join?</a></li>
+                                <li class=" has-dropdown "><a class="smoothScroll" href="{% url 'index' %}#services">Services</a>
+									<div class="subnav subnav-fullwidth">
+										<div class="col-md-3">
+                                            <ul class="subnav">
+											<li class="alt-font"><a href="{% url 'formation' %}">Formation of a Entity </a></li>
+                                            <h6 class="alt-font">Registration</h6>
+                                            <h6 class="alt-font">Fillings</h6>
+                                            </ul>
+
+
+										</div>
+                                        <div class="col-md-3">
+											<h6 class="alt-font">Certificate</h6>
+                                            <h6 class="alt-font">Miscellaneous Services</h6>
+                                            <h6 class="alt-font">Income Tax</h6>
+
+										</div>
+                                        <div class="col-md-3">
+											<h6 class="alt-font">Audits</h6>
+                                            <h6 class="alt-font">Services Related to Company</h6>
+                                            <h6 class="alt-font">Change Management</h6>
+										</div>
+
+
+										<div class="col-md-3">
+
+											<a class="btn btn-primary btn-filled" href="{% url 'sitemap' %}">All Services</a>
+										</div>
+									</div>
+								</li>
+                                <li class="has-dropdown"><a href="{% url 'paralegal' %}">Paralegal Services</a>
+									<ul class="subnav">
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#filling">Filling</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#drafting">Drafting</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#obtaining">Obtaining Certified Copies</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#rti">RTI Filling</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#process">process services</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#office">Office Management services</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#translation">Translation services</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#steno">Steno services</a></li>
+									</ul>
+								</li>
+                             <li> <a  href="{% url 'contact' %}"> <i class="icon icon_mobile"></i>Contact Us</a></li>
+
+
+
+
+
+							</ul>
+
+							<ul class="social-icons text-right">
+								<li>
+									<a href="#">
+										<i class="icon social_twitter"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.facebook.com/Legalplatformezligy">
+										<i class="icon social_facebook"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon social_instagram"></i>
+									</a>
+								</li>
+							</ul>
+
+
+
+						</div>
+
+					</div><!--end of row-->
+
+					<div class="mobile-toggle">
+						<i class="icon icon_menu"></i>
+					</div>
+
+				</div><!--end of container-->
+			</nav>
+		</div>
+		<div class="main-container">
+			<header class="page-header">
+				<div class="background-image-holder parallax-background" >
+					<img  class="background-image " alt="Background Image" src="{% static 'landing/img/O6O1490-min.jpg' %}">
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="text-white alt-font">Paralegal Support Services</span>
+							<h1 class="text-white"><strong>Paralegal</strong> </h1>
+							<p class="text-white lead">With the rise of online, internet related activities in current scenario, there is a demand for premium quality services with least turnaround time and affordable costs.
+ Our team offers paralegal support to individual, lawyers, law firms, in house counsels among others. Benefits of outsourcing routine paralegal tasks:
+Saves time and money
+Ensures workflow is streamlined
+Reliable and accurate data
+Our competent paralegals are proficient in handling all activities related to filings, prosecution and maintenance. Our paralegal services include:
+Document preparation and review,
+Filing,
+Obtaining Certified copies,
+Task reminders
+Office action responses
+Formatting and filing
+
+
+Office Management tools
+
+Other services with Ezligy</p>
+                            <p class="text-white lead">The para-legal expert gets in touch with the client and appraises him about the same immediately. The scope#}
+
+of work for the proposed services are determined, and the professional charges for the same are also quoted
+
+accordingly to the client and only after he agrees for the same the matter is taken up by us. Ezligy Tm ensures
+
+prompt and quick action on any services.</p>
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</header>
+            <section class="primary-features duplicatable-content">
+				<div class="container-fluid">
+					<div class="row">
+
+							<div class="col-md-2 col-sm-6 col-md-offset-1 clearfix">
+								<div class="feature feature-icon-small">
+
+									<a class="smoothScroll" href="{% url 'paralegal' %}#filling"><h3 class="text-white"><i class="icon icon-document"></i>&nbsp;Filling Services</h3></a>
+
+								</div><!--end of feature-->
+							</div>
+                       <div class="col-md-2 col-sm-6  clearfix">
+								<div class="feature feature-icon-small">
+
+									<a class="smoothScroll" href="{% url 'paralegal' %}#drafting"><h3 class="text-white"><i class="icon icon-document"></i>&nbsp;Drafting Services</h3></a>
+
+								</div><!--end of feature-->
+							</div>
+                        <div class="col-md-2 col-sm-6  clearfix">
+								<div class="feature feature-icon-small">
+
+									<a class="smoothScroll" href="{% url 'paralegal' %}#obtaining"><h3 class="text-white"><i class="icon icon-document"></i>&nbsp;Certified Copies</h3></a>
+
+								</div><!--end of feature-->
+							</div>
+                        <div class="col-md-2 col-sm-6  clearfix">
+								<div class="feature feature-icon-small">
+
+									<a class="smoothScroll" href="{% url 'paralegal' %}#rti"><h3 class="text-white"><i class="icon icon-document"></i>&nbsp;RTI Filling</h3></a>
+
+								</div><!--end of feature-->
+							</div>
+                        <div class="col-md-2 col-sm-6  clearfix">
+								<div class="feature feature-icon-small">
+
+									<a class="smoothScroll" href="{% url 'paralegal' %}#process"><h3 class="text-white"><i class="icon icon-document"></i>&nbsp;process services</h3></a>
+
+								</div><!--end of feature-->
+							</div>
+
+
+
+					</div><!--end of row-->
+
+				</div><!--end of container-->
+			</section>
+            <section id="who" class="duplicatable-content" style="background-color: #FAFAFA">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h1>EzLigy Is For Lawyers Who</h1>
+						</div>
+					</div><!--end of row-->
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon_building"></i>
+								</div>
+								<div class="pull-right">
+
+									<h6>
+										Want to expand their legal Horizon in this field of litigation
+									</h6>
+								</div>
+							</div>
+						</div><!--end 6 col-->
+
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon_datareport"></i>
+								</div>
+								<div class="pull-right">
+
+									<h6>
+										Want to earn more without getting distracted on unaccounted task
+									</h6>
+								</div>
+							</div>
+						</div><!--end 6 col-->
+
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon_trash_alt"></i>
+								</div>
+								<div class="pull-right">
+
+									<h6>
+										Think their most of the time gets wasted in unconstructive things
+									</h6>
+								</div>
+							</div>
+						</div><!--end 6 col-->
+
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon_info_alt"></i>
+								</div>
+								<div class="pull-right">
+
+									<h6>
+										Well loaded with work but with no extra hands to support
+
+									</h6>
+								</div>
+							</div>
+						</div><!--end 6 col-->
+
+					</div><!--end of row-->
+
+
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon_target"></i>
+								</div>
+								<div class="pull-right">
+
+									<h6>
+										Wanted themselves and their team to focus on core issues only
+									</h6>
+								</div>
+							</div>
+						</div><!--end 6 col-->
+
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon-linegraph"></i>
+								</div>
+								<div class="pull-right">
+
+									<h6>
+										Think can grow faster if assistance be provided on a piece meal basis
+									</h6>
+								</div>
+							</div>
+						</div><!--end 6 col-->
+
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon_group"></i>
+								</div>
+								<div class="pull-right">
+
+									<h6>
+										Do not want to hire someone on regular pay scale for petty work
+									</h6>
+								</div>
+							</div>
+						</div><!--end 6 col-->
+
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon_easel"></i>
+								</div>
+								<div class="pull-right">
+
+									<h6>
+										Received a big project which sustain for a short period of time and therefore not able to hire someone on permanent basis
+
+									</h6>
+								</div>
+							</div>
+						</div><!--end 6 col-->
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon icon_percent"></i>
+								</div>
+								<div class="pull-right">
+
+									<h6>
+										Thinks one should hire junior only when you can pay him well
+									</h6>
+								</div>
+							</div>
+						</div><!--end 6 col-->
+
+						<div class="col-sm-6">
+							<div class="feature feature-icon-large">
+								<div class="pull-left">
+									<i class="icon social_myspace"></i>
+								</div>
+								<div class="pull-right">
+
+									<h6>
+										Thinks hiring juniors is actually a headache
+
+									</h6>
+								</div>
+							</div>
+						</div><!--end 6 col-->
+
+					</div><!--end of row-->
+				</div>
+
+			</section>
+
+
+
+
+		</div>
+
+            <section class="accordion-section">
+				<div class="container " id="filling">
+					<div class="row">
+						<div class="col-sm-5 col-md-6 align-vertical no-align-mobile">
+							<ul class="icons-large">
+								<li><i class="icon icon-notebook"></i></li>
+								<li><i class="icon icon-clipboard"></i></li>
+                                <li><i class="icon icon-paperclip"></i></li>
+							</ul>
+							<h1 class="no-margin-bottom"><strong>Filling</strong> Services With Ezligy</h1>
+						</div>
+
+						<div class="col-sm-7 col-md-4 col-md-offset-2">
+							<ul class="accordion">
+								<li >
+									<div class="title"><span>Introduction</span></div>
+									<div class="text">
+										<p>
+											Our team provide assistance in filing plaint written statement applications etc in any judicial court, including trial court, Session Court, District Court, family court or any administrative authority or tribunal in finding appeals, revision, writ petitions, misc criminal case, arbitration case, before Hon’ble High Court in Madhya Pradesh.
+										</p>
+
+									</div>
+								</li>
+
+								<li>
+									<div class="title"><span>Services Includes</span></div>
+									<div class="text">
+										<ul style="font-size: 16px; " >
+                                        <li><i class="icon arrow_triangle-right"></i>Indexing of documents</li>
+                                        <li><i class="icon arrow_triangle-right"></i>Photocopy</li>
+                                        <li><i class="icon arrow_triangle-right"></i>Court fees/ bar tickets</li>
+                                        <li><i class="icon arrow_triangle-right"></i>Forms/ Declarations</li>
+                                        <li><i class="icon arrow_triangle-right"></i>Computer sheets</li>
+                                        <li><i class="icon arrow_triangle-right"></i>Presentations before filling section</li>
+
+
+
+
+
+
+                            </ul>
+									</div>
+								</li>
+
+								<li>
+									<div class="title"><span>Pricing & Further Details</span></div>
+									<div class="text">
+                                        <button type="button" class="btn btn-info" style="color: black">New Case</button><button type="button" class="btn btn-warning" style="color: black">Old Case</button>
+										</div>
+								</li>
+
+
+							</ul><!--end of accordion-->
+						</div>
+
+
+					</div><!--end of row-->
+				</div>
+			</section>
+            <section class="accordion-section">
+				<div class="container " id="drafting">
+					<div class="row">
+
+
+                        <div class="col-sm-5 col-md-6 align-vertical no-align-mobile">
+							<ul class="icons-large">
+								<li><i class="icon icon-circle-compass"></i></li>
+								<li><i class="icon icon-lightbulb"></i></li>
+								<li><i class="icon icon-scissors"></i></li>
+							</ul>
+							<h1 class="no-margin-bottom"><strong>Drafting</strong> Services With Ezligy</h1>
+						</div>
+
+                        <div class="col-sm-7 col-md-4 col-md-offset-2 ">
+							<ul class="accordion">
+								<li>
+									<div class="title"><span>Introduction</span></div>
+									<div class="text">
+										<p>
+											legal drafting is a complex task our team provide easy assistance in drafting legal documents Especially to practicing lawyer. Our team have experience and qualified people who understand the requirement of procedural law to make your document/case/ matter/suit/ appeal or petition in a proper format as per the procedural requirement of that particular court or authority.
+										</p>
+
+									</div>
+								</li>
+
+								<li>
+									<div class="title"><span>Services Includes</span></div>
+									<div class="text">
+										<ul style="font-size: 16px; " >
+                                        <li><i class="icon arrow_triangle-right"></i>Formatting as per format</li>
+                                        <li><i class="icon arrow_triangle-right"></i>Preparation of dates and events</li>
+                                        <li><i class="icon arrow_triangle-right"></i>Preparation of list of annexure</li>
+                                        <li><i class="icon arrow_triangle-right"></i>Preparation of general index</li>
+                                        <li><i class="icon arrow_triangle-right"></i>Preparation of affidavits</li>
+
+
+
+
+
+
+
+                            </ul>
+									</div>
+								</li>
+
+								<li>
+									<div class="title"><span>Pricing & Further Details</span></div>
+									<div class="text">
+
+									</div>
+								</li>
+
+
+							</ul><!--end of accordion-->
+						</div>
+
+
+
+
+
+
+					</div><!--end of row-->
+				</div>
+			</section>
+            <section class="accordion-section">
+				<div class="container " id="obtaining">
+					<div class="row">
+						<div class="col-sm-5 col-md-6 align-vertical no-align-mobile">
+							<ul class="icons-large">
+								<li><i class="icon icon-notebook"></i></li>
+								<li><i class="icon icon-clipboard"></i></li>
+                                <li><i class="icon icon-paperclip"></i></li>
+							</ul>
+							<h1 class="no-margin-bottom"><strong>Obtaining Certified Copies</strong>  With Ezligy</h1>
+						</div>
+
+						<div class="col-sm-7 col-md-4 col-md-offset-2">
+							<ul class="accordion">
+								<li class="">
+									<div class="title"><span>Introduction</span></div>
+{#									<div class="text">#}
+{#										<p>#}
+{#											Our team provide assistance in filing plaint written statement applications etc in any judicial court, including trial court, Session Court, District Court, family court or any administrative authority or tribunal in finding appeals, revision, writ petitions, misc criminal case, arbitration case, before Hon’ble High Court in Madhya Pradesh.#}
+{#										</p>#}
+{##}
+{#									</div>#}
+								</li>
+
+								<li>
+									<div class="title"><span>Services Includes</span></div>
+{#									<div class="text">#}
+{#										<ul style="font-size: 16px; " >#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Indexing of documents</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Photocopy</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Court fees/ bar tickets</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Forms/ Declarations</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Computer sheets</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Presentations before filling section</li>#}
+{##}
+{##}
+{##}
+{##}
+{##}
+{##}
+{#                            </ul>#}
+{#									</div>#}
+								</li>
+
+								<li>
+									<div class="title"><span>Pricing & Further Details</span></div>
+									<div class="text">
+
+									</div>
+								</li>
+
+
+							</ul><!--end of accordion-->
+						</div>
+
+
+					</div><!--end of row-->
+				</div>
+			</section>
+            <section class="accordion-section">
+				<div class="container " id="rti">
+					<div class="row">
+
+                        <div class="col-sm-5 col-md-6 align-vertical no-align-mobile">
+							<ul class="icons-large">
+								<li><i class="icon icon-circle-compass"></i></li>
+								<li><i class="icon icon-lightbulb"></i></li>
+								<li><i class="icon icon-scissors"></i></li>
+							</ul>
+							<h1 class="no-margin-bottom"><strong>RTI Filling</strong> With Ezligy</h1>
+						</div>
+
+						<div class="col-sm-7 col-md-4 col-md-offset-2 ">
+							<ul class="accordion">
+								<li class="">
+									<div class="title"><span>Introduction</span></div>
+{#									<div class="text">#}
+{#										<p>#}
+{#											legal drafting is a complex task our team provide easy assistance in drafting legal documents Especially to practicing lawyer. Our team have experience and qualified people who understand the requirement of procedural law to make your document/case/ matter/suit/ appeal or petition in a proper format as per the procedural requirement of that particular court or authority.#}
+{#										</p>#}
+{##}
+{#									</div>#}
+								</li>
+
+								<li>
+									<div class="title"><span>Services Includes</span></div>
+{#									<div class="text">#}
+{#										<ul style="font-size: 16px; " >#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Formatting as per format</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Preparation of dates and events</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Preparation of list of annexure</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Preparation of general index</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Preparation of affidavits</li>#}
+{##}
+{##}
+{##}
+{##}
+{##}
+{##}
+{##}
+{#                            </ul>#}
+{#									</div>#}
+								</li>
+
+								<li>
+									<div class="title"><span>Pricing & Further Details</span></div>
+									<div class="text">
+
+									</div>
+								</li>
+
+
+							</ul><!--end of accordion-->
+						</div>
+
+
+
+					</div><!--end of row-->
+				</div>
+			</section>
+            <section class="accordion-section">
+				<div class="container " id="process">
+					<div class="row">
+
+                        <div class="col-sm-5 col-md-6 align-vertical no-align-mobile">
+							<ul class="icons-large">
+								<li><i class="icon icon-circle-compass"></i></li>
+								<li><i class="icon icon-lightbulb"></i></li>
+								<li><i class="icon icon-scissors"></i></li>
+							</ul>
+							<h1 class="no-margin-bottom"><strong>Process services </strong> With Ezligy</h1>
+						</div>
+
+						<div class="col-sm-7 col-md-4 col-md-offset-2 ">
+							<ul class="accordion">
+								<li class="">
+									<div class="title"><span>Introduction</span></div>
+{#									<div class="text">#}
+{#										<p>#}
+{#											legal drafting is a complex task our team provide easy assistance in drafting legal documents Especially to practicing lawyer. Our team have experience and qualified people who understand the requirement of procedural law to make your document/case/ matter/suit/ appeal or petition in a proper format as per the procedural requirement of that particular court or authority.#}
+{#										</p>#}
+{##}
+{#									</div>#}
+								</li>
+
+								<li>
+									<div class="title"><span>Services Includes</span></div>
+{#									<div class="text">#}
+{#										<ul style="font-size: 16px; " >#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Formatting as per format</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Preparation of dates and events</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Preparation of list of annexure</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Preparation of general index</li>#}
+{#                                        <li><i class="icon arrow_triangle-right"></i>Preparation of affidavits</li>#}
+{##}
+{##}
+{##}
+{##}
+{##}
+{##}
+{##}
+{#                            </ul>#}
+{#									</div>#}
+								</li>
+
+								<li>
+									<div class="title"><span>Pricing & Further Details</span></div>
+									<div class="text">
+										The professional charges for any services are calculated on the basis of few key components like involvement
+
+of the attorney, no. of separate small task which our team has to perform in providing the service opted for,
+
+government duty or charges for the service and lastly time frame in which user wants to avail the entire work
+
+done. Once the client agrees to the terms of the services and releases the advance amount of the professional
+
+charges and submits all the related documents, statement of facts, etc .thereafter, the matter is handled by the
+
+core team who personally interacts with after that. The client has the option to pay the professional charges
+
+through bank transfer, cheques, cash or any other suitable mode as per his convenience.
+									</div>
+								</li>
+
+
+							</ul><!--end of accordion-->
+						</div>
+
+
+
+					</div><!--end of row-->
+				</div>
+			</section>
+            <section class="accordion-section">
+				<div class="container " id="office">
+					<div class="row">
+						<div class="col-sm-5 col-md-6 align-vertical no-align-mobile">
+							<ul class="icons-large">
+								<li><i class="icon icon-notebook"></i></li>
+								<li><i class="icon icon-clipboard"></i></li>
+                                <li><i class="icon icon-paperclip"></i></li>
+							</ul>
+							<h1 class="no-margin-bottom"><strong>Office Management services</strong>  </h1>
+						</div>
+
+						<div class="col-sm-7 col-md-4 col-md-offset-2">
+							<h1 class="no-margin-bottom">  coming soon...</h1>
+						</div>
+
+
+					</div><!--end of row-->
+				</div>
+			</section>
+            <section class="accordion-section">
+				<div class="container " id="translation">
+					<div class="row">
+						<div class="col-sm-5 col-md-6 align-vertical no-align-mobile">
+							<ul class="icons-large">
+								<li><i class="icon icon-notebook"></i></li>
+								<li><i class="icon icon-clipboard"></i></li>
+                                <li><i class="icon icon-paperclip"></i></li>
+							</ul>
+							<h1 class="no-margin-bottom"><strong>Translation services</strong>  </h1>
+						</div>
+
+						<div class="col-sm-7 col-md-4 col-md-offset-2">
+							<h1 class="no-margin-bottom">  coming soon...</h1>
+						</div>
+
+
+					</div><!--end of row-->
+				</div>
+			</section><section class="accordion-section">
+				<div class="container " id="steno">
+					<div class="row">
+						<div class="col-sm-5 col-md-6 align-vertical no-align-mobile">
+							<ul class="icons-large">
+								<li><i class="icon icon-notebook"></i></li>
+								<li><i class="icon icon-clipboard"></i></li>
+                                <li><i class="icon icon-paperclip"></i></li>
+							</ul>
+							<h1 class="no-margin-bottom"><strong>Steno services</strong>  </h1>
+						</div>
+
+						<div class="col-sm-7 col-md-4 col-md-offset-2">
+							<h1 class="no-margin-bottom">  coming soon...</h1>
+						</div>
+
+
+					</div><!--end of row-->
+				</div>
+			</section>
+
+            </section>
+		<div class="footer-container">
+			<footer class="bg-primary short-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="text-white"><h5 style="color: #FFFFFF">Ezligy Consultants LLP</h5><br><span class="text-white">Opp. Hotel Habitate Inn <br> Shinde Ki Chhawani <br> MLB Road Lashkar <br> Gwalior M.P. (474009)</span></span>
+                            <span class="text-white"><i class="icon_phone"></i>&nbsp;&nbsp;95845 45000<br><i class="icon_building_alt"></i>&nbsp;&nbsp;0751-4051000</span>
+							<span class="text-white"><i class="icon_mail">&nbsp;&nbsp;</i><a href="mailto:contact@ezligy.in?Subject=Hello%20again" target="_top">contact@ezligy.in</a></span>
+
+
+						</div>
+					</div><!--end for row-->
+				</div><!--end of container-->
+
+				<div class="contact-action">
+					<div class="align-vertical">
+						<i class="icon text-white icon_mail"></i>
+						<a href="{% url 'feedback' %}" class="text-white"><span class="text-white">Please give your valuable feedbacks <i class="icon arrow_right"></i></span></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+
+
+
+
+
+
+
+		<script src="{% static 'landing/js/jquery.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.plugin.min.js' %}"></script>
+        <script src="{% static 'landing/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.flexslider-min.js' %}"></script>
+        <script src="{% static 'landing/js/smooth-scroll.min.js' %}"></script>
+        <script src="{% static 'landing/js/skrollr.min.js' %}"></script>
+        <script src="{% static 'landing/js/spectragram.min.js' %}"></script>
+        <script src="{% static 'landing/js/scrollReveal.min.js' %}"></script>
+        <script src="{% static 'landing/js/isotope.min.js' %}"></script>
+        <script src="{% static 'landing/js/twitterFetcher_v10_min.js' %}"></script>
+        <script src="{% static 'landing/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.countdown.min.js' %}"></script>
+        <script src="{% static 'landing/js/scripts.js' %}"></script>
+
+        <script src="{% static 'landing/js/smoothscroll.js' %}"></script>
+
+
+    </body>
+</html>

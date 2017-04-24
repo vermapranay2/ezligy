@@ -1,0 +1,233 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+{% load staticfiles %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>EzLigy | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="{% static 'landing/css/flexslider.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/line-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/elegant-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/lightbox.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/theme-blues.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+        <script src="{% static 'landing/js/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+    </head>
+    <body>
+    	<div class="loader">
+    		<div class="spinner">
+			  <div class="double-bounce1"></div>
+			  <div class="double-bounce2"></div>
+			</div>
+    	</div>
+
+		<div class="nav-container">
+			<nav class="top-bar">
+				<div class="container">
+
+					<!--end of row-->
+
+
+					<div class="row nav-menu">
+						<div class="col-sm-3 col-md-2 columns">
+							<a href="{% url 'index' %}">
+								<img class="logo logo-light" alt="Logo" src="{% static 'landing/img/logo-light.png' %}">
+								<img class="logo logo-dark" alt="Logo" src="{% static 'landing/img/logo-dark.png' %}">
+							</a>
+						</div>
+
+						<div class="col-sm-9 col-md-10 columns">
+							<ul class="menu">
+								<li ><a class="smoothScroll" href="#about">About</a></li>
+                                <li ><a class="smoothScroll" href="#why">Why Join Us?</a></li>
+                                <li ><a class="smoothScroll" href="#who">Who Can Join?</a></li>
+
+
+
+
+							</ul>
+
+							<ul class="social-icons text-right">
+								<li>
+									<a href="#">
+										<i class="icon social_twitter"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon social_facebook"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon social_instagram"></i>
+									</a>
+								</li>
+							</ul>
+
+
+
+						</div>
+
+					</div><!--end of row-->
+
+					<div class="mobile-toggle">
+						<i class="icon icon_menu"></i>
+					</div>
+
+				</div><!--end of container-->
+			</nav>
+		</div>
+		<div class="main-container">
+            <section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                            <h1>
+								<strong class="text-grey">Registration</strong>
+							</h1>
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</section>
+
+
+
+				<section class="blog-image-snippet">
+				<div class="background-image-holder parallax-background">
+					<img alt="background image" class="background-image" src="{% static 'landing/img/services/645.jpg' %}">
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<a href="blog-single.html">
+								<h1 class="text-white">Shop Act registration</h1>
+								<span class="text-white alt-font"><i class="icon icon_calendar"></i> September 17th 2014</span>
+								<span class="text-white alt-font"><i class="icon icon_clock"></i> 4 minute read</span>
+							</a>
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</section>
+
+			<section class="blog-image-snippet">
+				<div class="background-image-holder parallax-background">
+					<img alt="background image" class="background-image" src="{% static 'landing/img/services/2083.jpg' %}">
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<a href="blog-single.html">
+								<h1 class="text-white">How to get the most out of your coffee break</h1>
+								<span class="text-white alt-font"><i class="icon icon_calendar"></i> September 14th 2014</span>
+								<span class="text-white alt-font"><i class="icon icon_clock"></i>&nbsp;2 minute read</span>
+							</a>
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</section>
+
+			<section class="blog-image-snippet">
+				<div class="background-image-holder parallax-background">
+					<img alt="background image" class="background-image" src="{% static 'landing/img/services/O6JTUC0.jpg' %}">
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<a href="blog-single.html">
+								<h1 class="text-white">Taking a closer look into useful site metrics</h1>
+								<span class="text-white alt-font"><i class="icon icon_calendar"></i> September 11th 2014</span>
+								<span class="text-white alt-font"><i class="icon icon_clock"></i>&nbsp;3 minute read</span>
+							</a>
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</section>
+
+			<section class="blog-image-snippet">
+				<div class="background-image-holder parallax-background">
+					<img alt="background image" class="background-image" src="{% static 'landing/img/services/O6TSHU0.jpg' %}">
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<a href="blog-single.html">
+								<h1 class="text-white">Trimming down the hours in your working week</h1>
+								<span class="text-white alt-font"><i class="icon icon_calendar"></i> September 8th 2014</span>
+								<span class="text-white alt-font"><i class="icon icon_clock"></i>&nbsp;2 minute read</span>
+							</a>
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</section>
+
+
+
+			</section>
+		</div>
+		<div class="footer-container">
+			<footer class="bg-primary short-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="text-white">Ezligy</span>
+							<span class="text-white"><a href="#">vermapranay2@gmail.com</a></span>
+							<span class="text-white">8305185569</span>
+							<span class="text-white">address</span>
+						</div>
+					</div><!--end for row-->
+				</div><!--end of container-->
+
+				<div class="contact-action">
+					<div class="align-vertical">
+						<i class="icon text-white icon_mail"></i>
+						<a href="contact.html" class="text-white"><span class="text-white">Get in touch with us <i class="icon arrow_right"></i></span></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+
+
+
+
+
+
+
+		<script src="{% static 'landing/js/jquery.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.plugin.min.js' %}"></script>
+        <script src="{% static 'landing/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.flexslider-min.js' %}"></script>
+        <script src="{% static 'landing/js/smooth-scroll.min.js' %}"></script>
+        <script src="{% static 'landing/js/skrollr.min.js' %}"></script>
+        <script src="{% static 'landing/js/spectragram.min.js' %}"></script>
+        <script src="{% static 'landing/js/scrollReveal.min.js' %}"></script>
+        <script src="{% static 'landing/js/isotope.min.js' %}"></script>
+        <script src="{% static 'landing/js/twitterFetcher_v10_min.js' %}"></script>
+        <script src="{% static 'landing/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.countdown.min.js' %}"></script>
+        <script src="{% static 'landing/js/scripts.js' %}"></script>
+    <script>
+
+</script>
+    </body>
+</html>

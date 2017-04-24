@@ -1,0 +1,132 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+{% load staticfiles %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>EzLigy | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="container w3-card">
+    <form id="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleSelect1">Case Type</label>
+    <select class="form-control" id="exampleSelect1">
+      <option data-price="25" id="AA">Arbitration Appeal - AA</option>
+      <option data-price="25" id="AC">Arbitration Case - AC</option>
+      <option data-price="25" id="AR">Arbitration Revision - AR</option>
+      <option data-price="25" id="CEA">Central Excise Appeal - CEA</option>
+      <option data-price="25000" id="CR">Civil Revision - CR</option>
+      <option data-price="25" id="COMA">Company Appeal - COMA</option>
+      <option data-price="25" id="COMP">Company Petition - COMP</option>
+      <option data-price="25" id="CONA">Contempt Appeal - CONA</option>
+      <option data-price="25" id="CONC">Contempt Petition - CONC</option>
+      <option data-price="25" id="CONCR">Contempt Petition (Criminal) - CONCR</option>
+      <option data-price="25" id="CRA">Criminal Appeal - CRA</option>
+      <option data-price="25" id="CRRF">Criminal Reference - CRRF</option>
+      <option data-price="25" id="CRRFC">Criminal Reference (Capital Punishment) - CRRFC</option>
+      <option data-price="25" id="CRR">Criminal Revision - CRR</option>
+      <option data-price="25" id="EP">Election Petition - EP</option>
+      <option data-price="25" id="FA">First Appeal - FA</option>
+      <option data-price="25" id="FEMA">Foreign Exchange Management Appeal - FEMA</option>
+      <option data-price="25" id="ITA">Income Tax Appeal - ITA</option>
+      <option data-price="25" id="MAAccident">Miscellaneous Appeal - MA - Accident</option>
+      <option data-price="25" id="MCC">Miscellaneous Civil Case - MCC -</option>
+      <option data-price="25" id="MCOMA">Miscellaneous Company Appeal - MCOMA</option>
+      <option data-price="25" id="MCRC482">Miscellaneous Criminal Case - MCRC - 482</option>
+      <option data-price="25" id="OTA">Other Tax Appeal - OTA</option>
+      <option data-price="25" id="RP">Review Petition - RP</option>
+      <option data-price="25" id="SA">Second Appeal - SA</option>
+      <option data-price="25" id="TR">Tax Reference - TR</option>
+      <option data-price="25" id="VATA">Value Added Tax Appeal  - VATA</option>
+      <option data-price="25" id="WTA">Wealth Tax Appeal  - WTA</option>
+      <option data-price="25" id="WA">Writ Appeal - WA</option>
+      <option data-price="25" id="WP226">Writ Petition - WP - 226</option>
+
+    </select>
+  </div>
+
+
+
+            <label for="example-number-input" class="col-2 col-form-label">Number Of Parties</label>
+
+            <input class="form-control" type="number" value="0" id="example-number-input">
+        <label for="example-number-input" class="col-2 col-form-label">Number Of Pages</label>
+
+            <input class="form-control" type="number" value="0" id="example-number-input">
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+    </div>
+    <div class="jumbotron">
+        <h1 id="showPrice"></h1>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script>
+       $(document).ready(function () {
+           var total=0;
+
+           $('select').on('change',function () {
+
+
+
+                     var price =$( "#exampleSelect1 option:selected" ).data('price');
+                     var type = $( "#exampleSelect1 option:selected" ).attr('id');
+
+                      if(type == 'WP226'){
+
+                         $("#example-number-input").keyup(function(){
+
+                             var num = $('#example-number-input').val();
+                             total = parseInt(price)*parseInt(num);
+                             $('#showPrice').text(total);
+
+                         });
+
+                     }
+                      else {
+                          $('#showPrice').text(price);
+                      }
+
+            });
+
+
+       });
+    </script>
+    </body>
+</html>

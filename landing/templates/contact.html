@@ -1,0 +1,248 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+{% load staticfiles %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>EzLigy | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="{% static 'landing/css/flexslider.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/line-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/elegant-icons.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/lightbox.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href="{% static 'landing/css/theme-blues.css' %}" rel="stylesheet" type="text/css" media="all"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+        <script src="{% static 'landing/js/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+    </head>
+    <body>
+
+
+		<div class="nav-container">
+			<nav class="top-bar">
+				<div class="container">
+
+					<!--end of row-->
+
+
+					<div class="row nav-menu">
+						<div class="col-sm-3 col-md-2 columns">
+							<a href="{% url 'index' %}">
+								<img class="logo logo-light" alt="Logo" src="{% static 'landing/img/logo-light.png' %}">
+								<img class="logo logo-dark" alt="Logo" src="{% static 'landing/img/logo-dark.png' %}">
+							</a>
+						</div>
+
+						<div class="col-sm-9 col-md-10 columns">
+							<ul class="menu">
+
+                                <li class=" has-dropdown "><a class="smoothScroll" href="{% url 'index' %}#services">Services</a>
+									<div class="subnav subnav-fullwidth">
+										<div class="col-md-3">
+                                            <ul class="subnav">
+											<li class="alt-font"><a href="{% url 'formation' %}">Formation of a Entity </a></li>
+                                            <h6 class="alt-font">Registration</h6>
+                                            <h6 class="alt-font">Fillings</h6>
+                                            </ul>
+
+
+										</div>
+                                        <div class="col-md-3">
+											<h6 class="alt-font">Certificate</h6>
+                                            <h6 class="alt-font">Miscellaneous Services</h6>
+                                            <h6 class="alt-font">Income Tax</h6>
+
+										</div>
+                                        <div class="col-md-3">
+											<h6 class="alt-font">Audits</h6>
+                                            <h6 class="alt-font">Services Related to Company</h6>
+                                            <h6 class="alt-font">Change Management</h6>
+										</div>
+
+
+										<div class="col-md-3">
+
+											<a class="btn btn-primary btn-filled" href="{% url 'sitemap' %}">All Services</a>
+										</div>
+									</div>
+								</li>
+                                <li class="has-dropdown"><a href="{% url 'paralegal' %}">Paralegal Services</a>
+									<ul class="subnav">
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#filling">Filling</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#drafting">Drafting</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#obtaining">Obtaining Certified Copies</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#rti">RTI Filling</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#process">process services</a></li>
+										<li ><a class="smoothScroll" href="{% url 'paralegal' %}#office">Office Management services</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#translation">Translation services</a></li>
+                                        <li ><a class="smoothScroll" href="{% url 'paralegal' %}#steno">Steno services</a></li>
+									</ul>
+								</li>
+                                <li> <a  href="{% url 'contact' %}"> <i class="icon icon_mobile"></i>Contact Us</a></li>
+
+
+
+
+
+							</ul>
+
+							<ul class="social-icons text-right">
+								<li>
+									<a href="#">
+										<i class="icon social_twitter"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.facebook.com/Legalplatformezligy">
+										<i class="icon social_facebook"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon social_instagram"></i>
+									</a>
+								</li>
+							</ul>
+
+
+
+						</div>
+
+					</div><!--end of row-->
+
+					<div class="mobile-toggle">
+						<i class="icon icon_menu"></i>
+					</div>
+
+				</div><!--end of container-->
+			</nav>
+		</div>
+		<div class="main-container">
+			<section class="map">
+				<div class="map-holder">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.8381126172662!2d78.15621295087746!3d26.201943983357687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDEyJzA3LjAiTiA3OMKwMDknMzAuMyJF!5e0!3m2!1sen!2sin!4v1491638833983" ></iframe>
+				</div>
+			</section>
+
+			<section class="contact-thirds">
+				<div class="container">
+					<div class="row">
+							<div class="col-sm-12 text-center">
+								<h1>Contact Us<br>
+								We'd love to hear from you
+								</h1>
+							</div>
+					</div><!--end of row-->
+
+					<div class="row">
+						<div class="col-sm-4">
+							<h2><strong>Ezligy Consultants LLP</strong></h2>
+
+							<p>
+								<p>Ezligy is a LLP having an in-house highly qualified team of Advocates, Charted Accountants, Legal advisors and Para Legal manpower including Clerks,. Our team is committed for handling of all legal services and compliances in most efficient manner. We have a dedicated desk for advice, assistance and providing a right person to do the services which one can opt for through the forum to provide quick, easy and effective assistance in the most efficient manner with a time and money saving manner. </p>
+							</p>
+
+							<p>
+								Any legal task is scrutinised at the back office at first by the team of our experts and practicing lawyers, it is then forwarded to the concerned para-legal expert of the field related to the task who gives a preliminary assessment over the procedure compliances as per applicable laws along with the professional time required and the estimate of the professional charges for the same.
+							</p>
+						</div>
+
+
+						<div class="col-sm-4 text-center">
+							<h5>Details</h5>
+
+							<p class="lead">
+								Opp. Hotel Habitate Inn Shinde Ki Chhawani<br> MLB Road Lashkar<br>Gwalior M.P. (474009)
+								<br><br><br>
+                                <span class="text-black"><i class="icon_phone"></i>&nbsp;&nbsp;95845 45000<br><i class="icon_building_alt"></i>&nbsp;&nbsp;0751-4051000</span>
+								<br><br><br>
+                                <span class="text-blue"><i class="icon_mail">&nbsp;&nbsp;</i><a href="mailto:contact@ezligy.in?Subject=Hello%20again" target="_top">contact@ezligy.in</a></span>
+
+							</p>
+						</div>
+
+						<div class="col-sm-4">
+							<h5>Leave A Message</h5>
+							<div class="form-wrapper clearfix">
+								<form  class="form-contact " method="POST">{% csrf_token %}
+									<div class="inputs-wrapper">
+										{{ form.name |attr:"class:form-name validate-required"|attr:"placeholder:Name"}}{{ form.name.error }}
+                                        {{ form.contact |attr:"class:form-number validate-required"|attr:"placeholder:Mobile number" |attr:"type:tel"}}
+										{{ form.email |attr:"class:form-email validate-required"|attr:"placeholder:email" | attr:"type:email"}}{{ form.email.error }}
+                                        &nbsp;&nbsp;&nbsp; Service &nbsp;
+                                        {{ form.service | attr:"class: btn btn-secondary  dropdown-toggle"|attr:"placeholder:Gender"  }}{{ form.service.error }}
+                                        {{ form.message |attr:"class:form-message validate-required"|attr:"placeholder:Message"}}
+									</div>
+									<input type="submit" class="send-form" value="Send Form" href="{% url 'index' %}">
+									<div class="form-success">
+										<span class="text-white">Message sent - Thanks for your enquiry</span>
+									</div>
+									<div class="form-error">
+										<span class="text-white">Please complete all fields correctly</span>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</section>
+		</div>
+		<div class="footer-container">
+			<footer class="bg-primary short-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="text-white"><h5 style="color: #FFFFFF">Ezligy Consultants LLP</h5><br><span class="text-white">Opp. Hotel Habitate Inn <br> Shinde Ki Chhawani <br> MLB Road Lashkar <br> Gwalior M.P. (474009)</span></span>
+                            <span class="text-white"><i class="icon_phone"></i>&nbsp;&nbsp;95845 45000<br><i class="icon_building_alt"></i>&nbsp;&nbsp;0751-4051000</span>
+							<span class="text-white"><i class="icon_mail">&nbsp;&nbsp;</i><a href="mailto:contact@ezligy.in?Subject=Hello%20again" target="_top">contact@ezligy.in</a></span>
+
+
+						</div>
+					</div><!--end for row-->
+				</div><!--end of container-->
+
+				<div class="contact-action">
+					<div class="align-vertical">
+						<i class="icon text-white icon_mail"></i>
+						<a href="{% url 'feedback' %}" class="text-white"><span class="text-white">Please give your valuable feedbacks <i class="icon arrow_right"></i></span></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+		<script src="{% static 'landing/js/jquery.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.plugin.min.js' %}"></script>
+        <script src="{% static 'landing/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.flexslider-min.js' %}"></script>
+        <script src="{% static 'landing/js/smooth-scroll.min.js' %}"></script>
+        <script src="{% static 'landing/js/skrollr.min.js' %}"></script>
+        <script src="{% static 'landing/js/spectragram.min.js' %}"></script>
+        <script src="{% static 'landing/js/scrollReveal.min.js' %}"></script>
+            <script src="{% static 'landing/js/isotope.min.js' %}"></script>
+        <script src="{% static 'landing/js/twitterFetcher_v10_min.js' %}"></script>
+        <script src="{% static 'landing/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'landing/js/jquery.countdown.min.js' %}"></script>
+        <script src="{% static 'landing/js/scripts.js' %}"></script>
+    <script>
+
+</script>
+    </body>
+</html>
